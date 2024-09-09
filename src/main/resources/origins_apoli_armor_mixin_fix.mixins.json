@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "telepathicgrunt.mixin",
+  "plugin": "telepathicgrunt.mixin.OriginsApoliArmorMixinFixMixinConfigPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

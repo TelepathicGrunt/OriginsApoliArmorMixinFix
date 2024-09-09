@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "origins_apoli_armor_mixin_fix",
+	"version": "${version}",
+	"name": "Origins Apoli Armor Mixin Fix",
+	"description": "Backport this fix to 1.20.1 for Apoli: https://github.com/apace100/apoli/commit/ce5a44b80fcd410c98a303ab93357f3c6668263e",
+	"authors": [
+		"TelepathicGrunt"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/origins_apoli_armor_mixin_fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "telepathicgrunt.OriginsApoliArmorMixinFixMod"
+		],
+		"mixinsquared": [
+			"telepathicgrunt.OriginsApoliArmorMixinFixCanceller"
+		]
+	},
+	"mixins": [
+		"origins_apoli_armor_mixin_fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=17",
+		"fabric-api": "*",
+		"origins": "*"
+	}
+}
