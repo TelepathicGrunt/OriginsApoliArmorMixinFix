@@ -11,14 +11,7 @@ base {
 }
 
 repositories {
-	mavenLocal()
 	mavenCentral()
-	maven {
-		url = 'https://api.modrinth.com/maven/'
-		content {
-			includeGroup 'maven.modrinth'
-		}
-	}
 	maven {
 		name = "Ladysnake Libs"
 		url = 'https://maven.ladysnake.org/releases'
@@ -36,16 +29,13 @@ repositories {
 		}
 	}
 	maven {
-		url = "https://masa.dy.fi/maven"
+		url = "https://jitpack.io"
 	}
 	maven {
 		url = "https://maven.shedaniel.me/"
 	}
 	maven {
 		url = "https://maven.terraformersmc.com/"
-	}
-	maven {
-		url = "https://jitpack.io"
 	}
 }
 
