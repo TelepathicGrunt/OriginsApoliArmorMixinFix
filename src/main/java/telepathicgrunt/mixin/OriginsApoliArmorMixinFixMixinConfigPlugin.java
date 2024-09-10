@@ -1,10 +1,9 @@
 package telepathicgrunt.mixin;
 
-import com.bawnorton.mixinsquared.canceller.MixinCancellerRegistrar;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
-import telepathicgrunt.OriginsApoliArmorMixinFixCanceller;
+import telepathicgrunt.OriginsApoliArmorMixinFixMod;
 
 import java.util.List;
 import java.util.Set;
@@ -12,7 +11,6 @@ import java.util.Set;
 public class OriginsApoliArmorMixinFixMixinConfigPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String mixinPackage) {
-        MixinCancellerRegistrar.register(new OriginsApoliArmorMixinFixCanceller());
     }
 
     @Override
@@ -42,6 +40,8 @@ public class OriginsApoliArmorMixinFixMixinConfigPlugin implements IMixinConfigP
 
     @Override
     public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
-
+        if (mixinClassName.contains("io.github.apace100.apoli.mixin.LivingEntityMixin")) {
+            int t = 5;
+        }
     }
 }
