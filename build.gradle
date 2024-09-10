@@ -64,11 +64,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	modRuntimeOnly("maven.modrinth:modmenu:7.2.2")
-
-	modCompileOnly(modRuntimeOnly("com.github.apace100:origins-fabric:${project.origins_version}"))
-	modCompileOnly("com.github.apace100:apoli:${project.apoli_version}")
+	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
 }
 
 processResources {
